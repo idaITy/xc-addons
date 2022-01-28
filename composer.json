@@ -26,7 +26,7 @@
         "xcadmin": {
             "services": [
                 "xc\\addons\\Service"
-            ],
-        },
+            ]
+        }
     }
 }
