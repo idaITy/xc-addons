@@ -2,7 +2,10 @@
     "name": "xcadmin/xc-addons",
     "type": "library",
     "require": {
-        "php": ">=7.2.0"
+        "php": ">=7.2.0",
+        "topthink/framework": "^6.0",
+        "topthink/think-view": "^1.0",
+        "topthink/think-helper": "^3.0.0"
     },
     "license": "Apache-2.0",
     "authors": [
@@ -14,6 +17,16 @@
     "autoload": {
         "psr-4": {
             "xc\\addons\\": "src/"
-        }
-    }
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "extra": {
+        "xcadmin": {
+            "services": [
+                "xc\\addons\\Service"
+            ],
+        },
+    },
 }
